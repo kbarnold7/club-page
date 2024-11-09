@@ -217,3 +217,107 @@ header h1 {
 .contact a:active {
     font-style: none;
 }
+
+@media only screen and (max-width: 850px) {
+    main {
+        gap: 2rem;
+    }
+
+    /* About */
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about-img {
+        width: 50vw;
+        padding-top: 1.5rem;
+    }
+    
+    /* Books */
+    .books {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .current-book, .past-book {
+        width: 40vw;
+    }
+
+    /* Testimonials */ 
+    .testimonials h3 {
+        width: 100%;
+    }
+    
+    .testimonial-quotes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .testimonial {
+        width: 40vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    main {
+        gap: 1rem;
+    }
+
+    /* Header */
+    header {
+        width: 100%;
+        height: 10%;
+    }
+    
+    header h1 {
+        font-size: 2.5rem;
+        padding: 1rem 0;
+    }
+
+    /* About */
+    .about {
+        width: 95%;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    .about-content {
+        padding-right: 0;
+    }
+    
+    /* Books */
+    .current-book, .past-book {
+        width: 95%;
+    }
+
+    /* Testimonials */ 
+    .testimonials {
+        margin: 0 auto;
+        width: 95%;
+        padding: 1rem 0.5rem;
+    }
+
+    .testimonials h3 {
+        line-height: 1;
+    }
+    
+    .testimonial-quotes {
+        gap: 1.5rem;
+    }
+    
+    .testimonial {
+        width: 95%;
+    }
+
+    /* Contact */
+    .contact {
+        padding: 0.5rem 0 1rem 0;
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+}
