@@ -1,0 +1,219 @@
+:root {
+    --color-1: #1eb091;
+    --color-2: #8dbdb3;
+    --color-3: #fff4cb;
+    --color-4: #fab25f;
+    --color-5: #ec6872;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: var(--color-3);
+    color: #000;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arsenal SC', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    display: grid;
+    width: 95%;
+    margin: auto auto;
+    justify-content: center;
+    align-items: center;
+    grid-template: repeat(auto, 10%) / repeat(3, 1fr);
+    gap: 5%;
+}
+
+/* Header */
+header {
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+/* About */
+.about {
+    grid-column: 1 / 4;
+    display: grid;
+    width: 95vw;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: #ec6872;
+    color: #121112;
+}
+
+.about-content {
+    grid-column: 1 / 3;
+    align-content: center;
+    padding-right: 2rem;
+    line-height: 1.3;
+    text-align: justify;
+}
+
+.about-content h2 {
+    font-size: 1.75rem;
+    padding-bottom: 0.2rem;
+    text-align: center;
+}
+
+.about-content h2:last-of-type {
+    padding-top: 1rem;
+}
+
+.about-content p:last-of-type {
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 1.05rem;
+}
+
+.about-img {
+    grid-column: 3 / 4;
+    margin: auto;
+}
+
+.about-img img {
+    width: 100%;
+    min-width: 200px;
+    max-width: 600px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* Books */
+.books {
+    grid-column: 1 / 4;
+    display: grid;
+    gap: 2%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.current-book, .past-book {
+    align-content: center;
+    height: 60vh;
+    width: auto;
+    padding: 1rem 0.5rem;
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--color-1);
+}
+
+.current-book figure, .past-book figure {
+    padding-bottom: 0.75rem;
+}
+
+.current-book {
+    grid-column: 1 / 2;
+}
+
+.one {
+    grid-column: 2 / 3;
+}
+
+.two {
+    grid-column: 3 / 4;
+}
+
+.three {
+    grid-column: 4 / 5;
+}
+
+.book-cover {
+    width: 55%;
+}
+.book-name {
+    padding-top: 0.2rem;
+    font-size: 1.1rem;
+}
+
+.book-title {
+    display: block;
+    font-style: italic;
+}
+
+.book-quote {
+    line-height: 1.3;
+}
+
+/* Testimonials */
+.testimonials {
+    grid-column: 1 / 4;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--color-4);
+}
+
+.testimonials h3 {
+    font-size: 1.75rem;
+    padding-bottom: 1rem;
+}
+
+.testimonial-quotes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonial {
+    width: 30%;
+    line-height: 1.3;
+}
+
+.member-initials {
+    display: block;
+    padding-top: 0.5rem;
+}
+
+/* Contact */
+.contact {
+    grid-column: 1/4;
+    width: 100%;
+    padding-bottom: 2rem;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.contact a {
+    color: var(--color-5);
+}
+
+.contact a:visited {
+    color: var(--color-2);
+}
+
+.contact a:hover {
+    font-style: italic;
+}
+
+.contact a:active {
+    font-style: none;
+}
